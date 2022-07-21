@@ -16,8 +16,32 @@ console.log(Dineroreal);
 
 function Nombrecompleto(n,a,ap){
 
- let completeName = n + a;
+ let completeName = n + " " + a;
  let nickname = ap;
  
 console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");  
 }
+// tercera parte
+function Tipos(tipoDeSuscripcion){
+ if (tipoDeSuscripcion === "Free") {
+    console.log("Solo puedes tomar los cursos gratis");
+ } else if(tipoDeSuscripcion === "Baric"){
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+ } else if (tipoDeSuscripcion === "Expert") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+ } else if (tipoDeSuscripcion === "ExpertPlus") {
+    console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+ }
+}
+
+function tipos2(suscripcion){
+    const tipos = ["Free","Basic","Expert","ExpertPlus",];
+    const infoTipos = ["Solo puedes tomar los cursos gratis","Puedes tomar casi todos los cursos de Platzi durante un mes","Puedes tomar casi todos los cursos de Platzi durante un año","Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año",];
+    
+    for (let i = 0; i < tipos.length; i++) {  
+        if (suscripcion == tipos[i]){
+            console.log("Tu Suscipcion es " + tipos[i] + " Ahora "+ infoTipos[i]);
+     }
+    } 
+}
+
